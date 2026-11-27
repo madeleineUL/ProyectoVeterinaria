@@ -1,4 +1,6 @@
 package proyectoveterinaria;
+import proyectoveterinaria.Medicamento;
+import proyectoveterinaria.Clientes;
 
 public class Perro extends Mascota {
 
