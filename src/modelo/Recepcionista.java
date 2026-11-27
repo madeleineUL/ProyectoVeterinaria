@@ -11,9 +11,23 @@ import modelo.Empleado;
  * @author EQUIPO
  */
 public class Recepcionista extends Empleado {
-    
-    public Recepcionista(String DNI, String nombre, String apellido, String usuario, String contraseña, String rol) {
-        super(DNI, nombre, apellido, usuario, contraseña, rol);
+
+    public Recepcionista(String DNI, String nombre, String apellido) {
+        super(DNI, nombre, apellido);
     }
+    
+    
+    
+    @Override
+    public String getRol() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void getOpcionesMenu() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+
     
 }
