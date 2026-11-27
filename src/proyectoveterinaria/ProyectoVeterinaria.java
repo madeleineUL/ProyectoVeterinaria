@@ -14,7 +14,10 @@ public class ProyectoVeterinaria {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Registro_Clientes registroClientes = new Registro_Clientes();
+
+        Registro_Mascotas registroMascotas = new Registro_Mascotas(registroClientes);
+
     }
     
 }
