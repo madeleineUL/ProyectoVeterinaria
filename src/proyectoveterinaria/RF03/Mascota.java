@@ -24,4 +24,25 @@ public abstract class Mascota {
     this.estado = estado;
     this.propietario = propietario;
 
-      
+    }
+
+    public String getCodigoMascota() {
+        return codigoMascota;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
