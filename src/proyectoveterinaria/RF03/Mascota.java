@@ -1,4 +1,6 @@
 package proyectoveterinaria;
+import proyectoveterinaria.Medicamento;
+import proyectoveterinaria.Clientes;
 
 public abstract class Mascota {
     protected String codigoMascota;
