@@ -46,3 +46,24 @@ public abstract class Mascota {
         return sexo;
     }
 
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public Clientes getPropietario() {
+        return propietario;
+    }
+
+    public abstract double calcularDosis(Medicamento medicamento);
+}
+  
+
+
