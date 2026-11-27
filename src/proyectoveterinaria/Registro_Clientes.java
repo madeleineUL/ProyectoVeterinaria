@@ -135,4 +135,13 @@ public class Registro_Clientes {
 
     } while (opcion != 3);
 }
+
+    public Clientes buscarCliente(String dni) {
+    for (int i = 0; i < contador; i++) {
+        if (clientes[i].getDNI().equals(dni)) {
+            return clientes[i];
+        }
+    }
+    return null;
+}
 }
