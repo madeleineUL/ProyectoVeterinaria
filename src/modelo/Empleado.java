@@ -8,7 +8,7 @@ package modelo;
  *
  * @author EQUIPO
  */
-public class Empleado {
+public abstract class Empleado extends Persona {
     private String DNI;
     private String nombre;
     private String apellido;
