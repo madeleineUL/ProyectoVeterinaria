@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package proyectoveterinaria;
+import proyectoveterinaria.RF03.Registro_Mascotas;
 
 /**
  *
@@ -14,9 +15,11 @@ public class ProyectoVeterinaria {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Registro_Clientes registroClientes = new Registro_Clientes();
+        GestorClientes gestorClientes = new GestorClientes();
 
-        Registro_Mascotas registroMascotas = new Registro_Mascotas(registroClientes);
+        gestorClientes.menuClientes();
+
+        Registro_Mascotas registroMascotas = new Registro_Mascotas(gestorClientes);
 
     }
     

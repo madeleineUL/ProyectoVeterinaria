@@ -1,6 +1,6 @@
-package proyectoveterinaria;
+package proyectoveterinaria.RF03;
 import proyectoveterinaria.Medicamento;
-import proyectoveterinaria.Clientes;
+import modelo.Cliente;
 
 public abstract class Mascota {
     protected String codigoMascota;
@@ -12,9 +12,9 @@ public abstract class Mascota {
     protected double peso;
     protected String estado;
 
-    protected Clientes propietario;
+    protected Cliente propietario;
 
-    public Mascota(String codigoMascota, String nombre, String especie, String raza, String sexo, String fechaNacimiento, double peso, String estado, Clientes propietario) {
+    public Mascota(String codigoMascota, String nombre, String especie, String raza, String sexo, String fechaNacimiento, double peso, String estado, Cliente propietario) {
 
     this.codigoMascota = codigoMascota;
     this.nombre = nombre;
@@ -60,7 +60,7 @@ public abstract class Mascota {
         return estado;
     }
 
-    public Clientes getPropietario() {
+    public Cliente getPropietario() {
         return propietario;
     }
 

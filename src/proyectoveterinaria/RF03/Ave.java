@@ -1,10 +1,10 @@
-package proyectoveterinaria;
+package proyectoveterinaria.RF03;
 import proyectoveterinaria.Medicamento;
-import proyectoveterinaria.Clientes;
+import modelo.Cliente;
 
 public class Ave extends Mascota {
 
-    public Ave(String codigoMascota, String nombre, String raza, String sexo, String fechaNacimiento, double peso, String estado, Clientes propietario) {
+    public Ave(String codigoMascota, String nombre, String raza, String sexo, String fechaNacimiento, double peso, String estado, Cliente propietario) {
 
     super(codigoMascota, nombre, "Ave", raza, sexo, fechaNacimiento, peso, estado, propietario);
     }

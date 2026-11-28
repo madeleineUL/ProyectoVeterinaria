@@ -1,10 +1,10 @@
-package proyectoveterinaria;
+package proyectoveterinaria.RF03;
 import proyectoveterinaria.Medicamento;
-import proyectoveterinaria.Clientes;
+import modelo.Cliente;
 
 public class Gato extends Mascota {
 
-    public Gato(String codigoMascota, String nombre, String raza, String sexo, String fechaNacimiento, double peso, String estado, Clientes propietario) {
+    public Gato(String codigoMascota, String nombre, String raza, String sexo, String fechaNacimiento, double peso, String estado, Cliente propietario) {
 
     super(codigoMascota, nombre, "Gato", raza, sexo, fechaNacimiento, peso, estado, propietario);
     }

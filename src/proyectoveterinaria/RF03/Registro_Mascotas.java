@@ -1,17 +1,17 @@
 package proyectoveterinaria.RF03;
 
 import java.util.Scanner;
-import proyectoveterinaria.Clientes;
-import proyectoveterinaria.Registro_Clientes;
+import modelo.Cliente;
+import proyectoveterinaria.GestorClientes;
 
 public class Registro_Mascotas {
 
     private Mascota[] mascotas = new Mascota[100];
     private int contador = 0;
-    private Registro_Clientes registroClientes;
+    private GestorClientes registroClientes;
 
-    public Registro_Mascotas(Registro_Clientes registroClientes) {
-        this.registroClientes = registroClientes;
+    public Registro_Mascotas(GestorClientes registroClientes) {
+    this.registroClientes = registroClientes;
     }
      public void agregarMascota() {
 
@@ -29,7 +29,7 @@ public class Registro_Mascotas {
         System.out.println("Ingrese el DNI del propietario:");
         String dni = sc.nextLine();
 
-        Clientes propietario = registroClientes.buscarCliente(dni);
+        Cliente propietario = registroClientes.buscarPorDNI(dni);
 
         if (propietario == null) {
             System.out.println("No se encontró al cliente.");
@@ -117,7 +117,7 @@ public class Registro_Mascotas {
             System.out.println("Peso: " + mascotas[i].getPeso());
             System.out.println("Estado: " + mascotas[i].getEstado());
             System.out.println("Propietario: "
-                    + mascotas[i].getPropietario().getNombres());
+                    + mascotas[i].getPropietario().getNombre());
 
             System.out.println("---------------------------------------");
         }

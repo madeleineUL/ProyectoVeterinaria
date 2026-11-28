@@ -19,6 +19,17 @@ public abstract class  Persona {
         this.apellido = apellido;
     }
     
+    public String getDNI() {
+        return DNI;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
     
     
 }
